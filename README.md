@@ -6,7 +6,9 @@ https://github.com/sarkov28/c19_tokyo_kunishihyou
 
 ## Features
 
-東京都が https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html で公表している国基準データのうち、2021-07 末以降に waybackmachine（web.archive.org）で入手可能なものの csv 化を試みました。
+東京都が https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html で公表している国基準データ pdf のうち、2021-07 末以降に waybackmachine（web.archive.org）で入手可能なものの csv 化を試みました。
+
+今後は、自動ダウンロードしたデータ pdf からも csv 化してく予定です。
 
 2021-08-02 時点で、2021-07-06〜2021-08-01 のデータが入手可能でした。
 
