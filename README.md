@@ -48,14 +48,24 @@ https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunish
 
 このリポジトリは、当面の間、週に1度程度は更新しようと思っています。
 
-ただし元となるデータのフォーマットなどに大きな変化があった場合は、追随を諦める可能性があります。
+2021-08-01 までのデータは、waybackmachine（web.archive.org）のデータに依存していました。この場合、waybackmachine にデータがないと処理出来ません。
+
+2021-08-02 付の分以降は、東京都のサイト https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html から該当のデータ pdf を手元に自動でダウンロードするようにしたので、（waybackmachine にデータがなくても）そこから処理できるはずです。
+
+ただし、手元のPCにトラブルがあった場合には、この自動ダウンロードが正常に行われない可能性があります。
+
+この場合、該当する csv が作成できない日が生じる可能性があります。
+
+また、元となるデータ pdf の発表方法やフォーマットなどに大きな変化があった場合は、追随を諦める可能性があります。
 
 ## Author
 
-sarkov28@twitter.com
+https://twitter.com/sarkov28
 
 ## License
 
 このリポジトリは、東京都公表の公的データを加工したものです。
 
-自由に使っていただいて構いませんが、フォーマットの揺れがあるため、思わぬ問題が発生している可能性があります。
+自由に使っていただいて構いませんが、内容は保証出来ません。
+
+フォーマットの揺れがあるため、思わぬ問題が発生している可能性があります。
