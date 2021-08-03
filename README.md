@@ -64,9 +64,16 @@ https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunish
 
 https://twitter.com/sarkov28
 
+コロナに関することを色々と書いています。
+
+- 新型コロナ関連の主な事柄のリスト
+  https://sarkov28.hatenablog.com/entry/2021/01/25/193020
+- 新型コロナ関連の主な事柄のリスト（特に重要な項目）
+  https://sarkov28.hatenablog.com/entry/2021/01/25/193753
+
 ## License
 
-このリポジトリは、東京都公表の公的データを加工したものです。
+このリポジトリは、東京都公表のデータを加工したものです。
 
 自由に使っていただいて構いませんが、内容は保証出来ません。
 
