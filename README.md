@@ -8,8 +8,7 @@ https://github.com/sarkov28/c19_tokyo_kunishihyou
 
 東京都が https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html で公表している国基準データ pdf のうち、2021-07 末以降に waybackmachine（web.archive.org）で入手可能なものの csv 化を試みました。
 
-今後は、自動ダウンロードしたデータ pdf からも csv 化してく予定です。
-
+今後は、自動ダウンロードしたデータ pdf からも csv 化してく予定です。  
 2021-08-02 時点で、2021-07-06〜2021-08-01 のデータが入手可能でした。
 
 ファイル名が t1 で始まっているファイルは、
@@ -34,8 +33,7 @@ t2 形式のファイルは、プログラム等で処理しやすいことを�
 
 このデータの作成にあたっては、python を使い、tabula.read_pdf() で DataFrame に変換してから処理しました。
 
-以下の問題がありました。
-
+この際、以下の問題がありました。  
 これらが tabula.read_pdf() を含む処理系の問題なのか、ソースデータの pdf の問題なのかは調べていませんが、(2b) に書いたフォーマットの変化を考えると、ソースデータの問題なのかも知れません。
 
 - (2a) 2021年7月の短い期間の間にも、変換した DataFrame のフォーマットが何度も変化しています。
@@ -43,10 +41,27 @@ t2 形式のファイルは、プログラム等で処理しやすいことを�
 
 このため、得られた csv は、残念ながらよく注意しながら取り扱う必要があります。
 
+## Detail
+
+pdf ファイルから、DataFrame にするには、上述したように python + tabla.read_pdf() を使っています。  
+得られた DataFrame はそのままでは表になっていなかったので、適宜加工しています。
+
+pdf ファイルの入手方法は、2021-08-01 以前と以後で異なります。
+
+以前は、以下の方法です。
+- pdf ファイルの url は、7月31日の場合、url=https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.files/kuni0731.pdf である。
+- url がわかると、そのファイルのアーカイブが waybackmachine に保存されているのか、また保存されているならその url は何かを、https://archive.org/help/wayback_api.php の先頭に記載されている API で知ることができる。
+- この url をダウンロードすれば、pdf ファイルが入手できる。
+
+以後は、以下の方法です。
+- https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html の記載から、pdf ファイルの url を知ることができる。
+- この url をダウンロードすれば、pdf ファイルが入手できる。
+
 ## Plan
 
-東京都は、このリポジトリの元となるデータを、休日も含め、毎日更新しているようです。
+東京都は、このリポジトリの元となるデータ
 https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html
+を、休日も含め、毎日更新しているようです。
 
 このリポジトリは、当面の間、週に1度程度は更新しようと思っています。
 
@@ -54,11 +69,11 @@ https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunish
 
 2021-08-02 付の分以降は、東京都のサイト https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html から該当のデータ pdf を手元に自動でダウンロードするようにしたので、（waybackmachine にデータがなくても）そこから処理できるはずです。
 
-ただし、手元のPCにトラブルがあった場合には、この自動ダウンロードが正常に行われない可能性があります。
+ただし、手元のPCにトラブルがあった場合には、この自動ダウンロードが成功しない可能性があります。
 
 この場合、該当する csv が作成できない日が生じる可能性があります。
 
-また、元となるデータ pdf の発表方法やフォーマットなどに大きな変化があった場合は、追随を諦める可能性があります。
+また、元となるデータ pdf の発表方法やフォーマットなどに大きな変化があった場合は、更新を諦める可能性があります。
 
 ## Author
 
@@ -73,8 +88,6 @@ https://twitter.com/sarkov28
 
 ## License
 
-このリポジトリは、東京都公表のデータを加工したものです。
-
-自由に使っていただいて構いませんが、内容は保証出来ません。
-
+このリポジトリは、東京都公表のデータを加工したものです。  
+自由に使っていただいて構いませんが、内容は保証出来ません。  
 フォーマットの揺れがあるため、思わぬ問題が発生している可能性があります。
