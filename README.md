@@ -2,7 +2,7 @@
 
 ## URL
 
-https://github.com/sarkov28/tokyo_kunishihyou
+https://github.com/sarkov28/c19_tokyo_kunishihyou
 
 ## Features
 
