@@ -48,12 +48,12 @@ pdf ファイルから、DataFrame にするには、上述したように pytho
 
 pdf ファイルの入手方法は、2021-08-01 以前と以後で異なります。
 
-以前は、以下の方法です。
+2021-08-01 以前は、以下の方法です。
 - pdf ファイルの url は、7月31日の場合、url=https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.files/kuni0731.pdf である。
 - url がわかると、そのファイルのアーカイブが waybackmachine に保存されているのか、また保存されているならその url は何かを、https://archive.org/help/wayback_api.php の先頭に記載されている API で知ることができる。
 - この url をダウンロードすれば、pdf ファイルが入手できる。
 
-以後は、以下の方法です。
+2021-08-02 以後は、以下の方法です。
 - https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html の記載から、pdf ファイルの url を知ることができる。
 - この url をダウンロードすれば、pdf ファイルが入手できる。
 
@@ -65,15 +65,14 @@ https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunish
 
 このリポジトリは、当面の間、週に1度程度は更新しようと思っています。
 
-2021-08-01 までのデータは、waybackmachine（web.archive.org）のデータに依存していました。この場合、waybackmachine にデータがないと処理出来ません。
+2021-08-01 までのデータは、waybackmachine（web.archive.org）のデータに依存しています。この方法だと、waybackmachine にデータがないと処理出来ません。
 
-2021-08-02 付の分以降は、東京都のサイト https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html から該当のデータ pdf を手元に自動でダウンロードするようにしたので、（waybackmachine にデータがなくても）そこから処理できるはずです。
+2021-08-02 以降は、東京都のサイト https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html から該当のデータ pdf を手元に自動でダウンロードするようにしたので、（waybackmachine にデータがなくても）そこから処理できるはずです。
 
-ただし、手元のPCにトラブルがあった場合には、この自動ダウンロードが成功しない可能性があります。
-
+ただし、手元のPCにトラブルがあった場合には、この自動ダウンロードが成功しない可能性があります。  
 この場合、該当する csv が作成できない日が生じる可能性があります。
 
-また、元となるデータ pdf の発表方法やフォーマットなどに大きな変化があった場合は、更新を諦める可能性があります。
+また、元となるデータ pdf の発表方法やフォーマットなどに大きな変化があった場合は、更新を諦めるかも知れません。
 
 ## Author
 
