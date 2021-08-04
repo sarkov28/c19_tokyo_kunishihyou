@@ -78,7 +78,7 @@ https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunish
 
 https://twitter.com/sarkov28
 
-コロナに関することを色々と書いています。
+twitter やブログに、コロナに関することを色々と書いています。
 
 - 新型コロナ関連の主な事柄のリスト  
   https://sarkov28.hatenablog.com/entry/2021/01/25/193020
