@@ -76,7 +76,7 @@ https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunish
 
 ## FAQ
 
-いかにも疑問に思われそうな箇所についての予めの回答です。
+いかにも疑問に思われそうな箇所について、予め書いておきます。
 
 (1)  
 問  
