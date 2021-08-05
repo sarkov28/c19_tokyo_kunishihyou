@@ -1,5 +1,12 @@
 # 東京都の国基準tコロナデータの csv 化
 
+## update
+
+2021-08-05 11:00 ごろ、ご指摘をいただき、改行コードと文字コードの問題があることに気づき、これを修正しました。  
+windows では文字化けや、Excel での読み込みエラーが発生していたと思います。  
+「LF と utf-8」だったのですが、これを「CR+LF と shift_jis」に変更しました。  
+失礼しました。
+
 ## URL
 
 https://github.com/sarkov28/c19_tokyo_kunishihyou
