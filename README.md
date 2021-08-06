@@ -13,10 +13,9 @@ https://github.com/sarkov28/c19_tokyo_kunishihyou
 
 ## Features
 
-東京都が https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html で公表している国基準データ pdf のうち、2021-07 末以降に waybackmachine（web.archive.org）で入手可能なものの csv 化を試みました。
-
-今後は、自動ダウンロードしたデータ pdf からも csv 化してく予定です。  
-2021-08-02 時点で、2021-07-06〜2021-08-01 のデータが入手可能でした。
+東京都が https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html で公表している国基準データ pdf のうち、2021-07 末以降に waybackmachine（web.archive.org）で入手可能なものの csv 化を試みました。  
+2021-08-02 時点で、2021-07-06〜2021-08-01 のデータが入手可能でした。  
+今後の更新では、自動ダウンロードしたデータ pdf から csv 化していく予定です。
 
 ファイル名が t1 で始まっているファイルは、
 - 全日付のデータを1つのファイルに入れてあります。
@@ -44,13 +43,13 @@ t1 形式のファイルは、プログラム等で処理しやすいことを�
 これらが tabula.read_pdf() を含む処理系の問題なのか、ソースデータの pdf の問題なのかは調べていませんが、(2b) に書いたフォーマットの変化を考えると、ソースデータの問題なのかも知れません。
 
 - (2a) 2021年7月の短い期間の間にも、変換した DataFrame のフォーマットが何度も変化しています。
-- (2b) pdf の表示ではデータの入っているカラムが、DataFrame では無くなっている（空欄になっているのではない）ことがあります。（私は読み込んだデータを全て出力しています。ある日に存在したカラムが、別の日に無くなっていることがあります。）
+- (2b) pdf の表示ではデータの入っているカラムが、DataFrame では無くなっている（＝空欄になっているのではない）ことがあります。（私は読み込んだデータを全て出力しています。ある日に存在したカラムが、別の日に無くなっていることがあります。）
 
 このため、得られた csv は、残念ながらよく注意しながら取り扱う必要があります。
 
 ## Detail
 
-pdf ファイルから、DataFrame にするには、上述したように python + tabla.read_pdf() を使っています。  
+pdf ファイルから、DataFrame にするには、上述したように python + tabula.read_pdf() を使っています。  
 得られた DataFrame はそのままでは表になっていなかったので、適宜加工しています。
 
 pdf ファイルの入手方法は、2021-08-01 以前と以後で異なります。
@@ -76,7 +75,8 @@ https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunish
 
 2021-08-02 以降は、東京都のサイト https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html から該当のデータ pdf を手元に自動でダウンロードするようにしたので、（waybackmachine にデータがなくても）そこから処理できるはずです。
 
-ただし、手元のPCにトラブルがあった場合には、この自動ダウンロードが成功しない可能性があります。  
+ただし、手元のPCにトラブルがあった場合には、この自動ダウンロードが失敗する可能性があります。  
+自動ダウンロードに失敗しても、waybackmachine にデータがあれば回復できますが、waybackmachine にデータがあるとは限りません。
 この場合、該当する csv が作成できない日が生じる可能性があります。
 
 また、元となるデータ pdf の発表方法やフォーマットなどに大きな変化があった場合は、更新を諦めるかも知れません。
