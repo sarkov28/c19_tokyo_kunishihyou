@@ -27,7 +27,7 @@ https://github.com/sarkov28/c19_tokyo_kunishihyou
 
 東京都が https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/corona_portal/info/kunishihyou.html で公表している国基準データ pdf のうち、2021-07 末以降に waybackmachine（web.archive.org）で入手可能なものの csv 化を試みました。  
 2021-08-02 時点で、2021-07-06〜2021-08-01 のデータが入手可能でした。  
-今後の更新では、自動ダウンロードしたデータ pdf から csv 化していく予定です。
+2021-08-02 今後の更新では、自動ダウンロードしたデータ pdf から csv 化していく予定です。
 
 ファイル名が t0、t1 で始まっているファイルは、
 - 全日付で1つのファイルです。
